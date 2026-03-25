@@ -1,5 +1,5 @@
 import React from 'react'
-import './dock.scss';
+import '../styles/dock.scss';
 
 const Dock = () => {
   return (
