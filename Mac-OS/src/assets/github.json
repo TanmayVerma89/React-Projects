@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1526378722484-cc5c510f3f77",
+    "image": "https://plus.unsplash.com/premium_vector-1724601119764-425a6bb62c46?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "title": "Realtime Chat App",
     "description": "A real-time chat application with authentication and WebSocket-based messaging.",
     "tags": ["Node.js", "Socket.io", "Express", "MongoDB", "WebSockets"],

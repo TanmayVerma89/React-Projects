@@ -49,4 +49,11 @@
     .main-content{
         height: 100%;
     }
+    *::-weBkit-scrollbar{
+        width: 0.3rem !important ;
+    }
+    *::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 0.25rem;
+    }
 }
