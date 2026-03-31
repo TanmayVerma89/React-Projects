@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Github from './windows/Github'
 import Note from './windows/Note'
 import Pdf from './windows/Pdf'
+import Spotify from './windows/Spotify'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Github />
       <Note />
       <Pdf />
+      <Spotify />
     </main>
   )
 }
