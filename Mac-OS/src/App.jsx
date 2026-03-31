@@ -6,6 +6,7 @@ import Github from './windows/Github'
 import Note from './windows/Note'
 import Pdf from './windows/Pdf'
 import Spotify from './windows/Spotify'
+import CLI from './windows/CLI'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Note />
       <Pdf />
       <Spotify />
+      <CLI />
     </main>
   )
 }
