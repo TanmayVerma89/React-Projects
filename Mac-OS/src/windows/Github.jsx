@@ -10,8 +10,8 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
         <p className='desc'>{data.description}</p>
         <div className="tags">
             {
-                data.tags.map(tag =>
-                    <div className="tag">{tag}</div>
+                data.tags.map((tag,idx) =>
+                    <div key={idx} className="tag">{tag}</div>
                 )
             }
         </div>
@@ -22,12 +22,12 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
     </div>
 };
 
-const Github = () => {
+const Github = ({windowName , setwindowState}) => {
     return (
-        <MacWindows>
+        <MacWindows windowName={windowName} setwindowState={setwindowState}>
             <div className="cards">
-                {githubData.map(project => {
-                    return <GitCard data={project} />
+                {githubData.map((project,idx) => {
+                    return <GitCard data={project} key={idx} />
                 })}
             </div>
         </MacWindows>

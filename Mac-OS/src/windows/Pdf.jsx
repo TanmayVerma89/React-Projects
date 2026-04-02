@@ -2,11 +2,12 @@ import React from 'react';
 import "../styles/pdf.scss";
 import MacWindows from './MacWindows';
 
-const Pdf = () => {
+const Pdf = ({windowName , setwindowState}) => {
   return (
-    <MacWindows>
+    <MacWindows
+    windowName={windowName} setwindowState={setwindowState}>
       <div className="resume">
-        <embed src="./resume.pdf" frameborder="0"></embed>
+        <embed src="./resume.pdf" frameBorder="0"></embed>
       </div>
     </MacWindows>
   )

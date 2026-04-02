@@ -9,7 +9,7 @@ const cvQuestions = [
     { id: 2, question: 'What technologies do you use?', answer: 'React, JavaScript, CSS/SCSS, Git, Vite, responsive design and component architecture.' },
     { id: 3, question: 'How do you solve problems?', answer: 'I break problems into small tasks, test each step, and iterate quickly with feedback loops.' }
 ];
-const CLI = () => {
+const CLI = ({windowName , setwindowState}) => {
     const commands = {
         echo: {
             description: 'Echo a passed string.',
@@ -77,7 +77,8 @@ const CLI = () => {
     };
 
     return (
-        <MacWindows>
+        <MacWindows
+        windowName={windowName} setwindowState={setwindowState}>
             <div className="cli-window">
                 <Terminal 
                     commands={commands}

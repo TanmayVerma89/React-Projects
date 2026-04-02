@@ -6,7 +6,7 @@ import Markdown from 'react-markdown'
 import "../styles/note.scss"
 import MacWindows from './MacWindows'
 
-const Note = () => {
+const Note = ({windowName , setwindowState}) => {
 
   const [markdown, setmarkdown] = useState("")
 
@@ -20,7 +20,8 @@ const Note = () => {
   }, [])
 
   return (
-    <MacWindows>
+    <MacWindows
+    windowName={windowName} setwindowState={setwindowState}>
       <div className="note-window">
         {markdown.length > 0 ? <SyntaxHighlighter language='typescript' style={dark}>{markdown}</SyntaxHighlighter>: <p>Loading....</p>}
       </div>
